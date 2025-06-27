@@ -34,7 +34,7 @@
       and i = 0
       and tid = nil
       do (let ((ttid
-                 (do-encode number-list 0
+                 (do-encode number-list i
                    (copy-seq alphabet)
                    (min-length instance))))
            (if (null (find ttid (blocklist instance) :test #'string=))
