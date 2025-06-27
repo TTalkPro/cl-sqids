@@ -48,9 +48,9 @@
     (shuffle (copy-seq (alphabet instance)))))
 
 (defun make-sqids (&key
-                      (min-length default-length)
-                      (alphabet default-alphabet)
-                      (blocklist default-blocklist))
+                      (min-length +default-length+)
+                      (alphabet +default-alphabet+)
+                      (blocklist +default-blocklist+))
   (make-instance 'sqids :min-length min-length :alphabet alphabet :blocklist blocklist))
 
 ;; (defparameter s (make-instance 'sqids :min-length 10))

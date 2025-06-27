@@ -1,7 +1,11 @@
 (in-package #:cl-sqids)
-(defconstant default-alphabet "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
-(defconstant default-length 6)
-(defconstant default-blocklist
+;;in SBCL defconstant takes effect not only at load time but also at compile time
+(defconstant +default-length+ 6)
+
+(defconstant +default-alphabet+
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+
+(defconstant +default-blocklist+
   '("0rgasm"
     "1d10t"
     "1d1ot"
