@@ -1,0 +1,5 @@
+(in-package #:cl-sqids)
+(define-condition update-immutable-slot (error) ())
+(define-condition max-regenerate-id (error) ())
+(define-condition unsupported-type (error) ())
+(define-condition bad-alphabet (error) ())
